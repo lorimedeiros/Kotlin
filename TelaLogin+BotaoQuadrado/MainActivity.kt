@@ -1,3 +1,8 @@
+/*
+serão lidos login e senha
+qualquer login diferente de "user" e qualquer senha diferente de "pass" resultará em login inválido
+em ambos os casos (válido/inválido) os dados digitados pelo usuário serão apagados após o clique no botão
+*/
 package com.example.myapplication
 
 import android.os.Bundle

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Conversor de moeda"
+        android:textSize="30sp" />
+
+    <!-- é possível observar que esse textview não tem id. motivo: não será manipulado de forma alguma, só serve como elemento indicativo ou orientador -->
+
+    <EditText
+        android:id="@+id/edit_euros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Insira um valor em euros"
+        android:inputType="number|numberDecimal|numberSigned" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOLAR" />
+
+        <Button
+            android:id="@+id/button_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="REAL" />
+        <!-- esse espaçamento (margin) foi dado para os botões não ficarem colados uns nos outros -->
+
+        <Button
+            android:id="@+id/button_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PESO" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center|bottom"
+        android:text="Desenvolvido por: Lori Medeiros"
+        android:textSize="20sp" />
+
+</LinearLayout>

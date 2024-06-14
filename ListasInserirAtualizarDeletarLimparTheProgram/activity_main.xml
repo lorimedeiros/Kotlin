@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/edit_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/button_inserir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSERIR" />
+
+    <Button
+        android:id="@+id/button_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDITAR" />
+
+    <Button
+        android:id="@+id/button_deletar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ELIMINAR" />
+
+    <Button
+        android:id="@+id/button_limpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIMPAR" />
+
+    <ListView
+        android:id="@+id/list_view_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

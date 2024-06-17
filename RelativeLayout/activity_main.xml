@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/verdao"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_centerInParent="true"
+        android:background="#F0F0"
+        android:gravity="center"
+        android:text="Verdão"
+        android:textSize="25sp" />
+
+    <!--
+    android:layout_centerVertical="true"
+    este comando sozinho irá deixar o t.v. encostado na lateral esquerda e bem no meio dela
+
+    android:layout_centerVertical="true"
+    este outro comando irá colocar encostado no topo e bem no meio
+
+    OBS: a junção destes 2 comandos deixa exatamente no meio do layout
+
+    android:layout_centerInParent="true"
+    vai fazer exatamente o que os 2 comandos fazem juntos, vai deixar no centro
+
+    android:layout_alignParentBottom="true"
+    vai deixar no canto inferior esquerdo
+
+    android:layout_alignParentEnd="true"
+    vai deixar no canto superior direito
+
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    vai deixar no canto inferior direito
+
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentStart="true"
+    vai esticar o elemento entre as pontas superiores
+
+    Resumindo... botton: baixo, top: cima, end: direita, start: esquerda
+    -->
+
+    <TextView
+        android:id="@+id/rosado"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_above="@+id/verdao"
+        android:layout_centerInParent="true"
+        android:background="#F0F"
+        android:gravity="center"
+        android:text="Rosado"
+        android:textSize="20sp" />
+
+    <!--
+    a ordem define quem fica em cima de quem
+    nesse caso os mais antigos em baixo e os mais recentes acima (com mais recentes digo os mais abaixo no código)
+    por isso o rosado está em cima do verdão
+
+    android:layout_above="@+id/verdao"
+    isso faz com que o rosado fique imediatamente acima do verdão
+    OBS: se não estiver com o centerInParent true ele vai ficar no meio esquerdo, porém exatamente acima do outro
+
+    android:layout_toStartOf="@+id/verdao"
+    colocaria exatamente na esquerda do verdão, encostadinho
+
+    android:layout_toEndOf="@+id/verdao"
+    colocaria exatamente na direita do verdão, encostadinho
+    -->
+
+</RelativeLayout>

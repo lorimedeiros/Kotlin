@@ -73,4 +73,15 @@
     colocaria exatamente na direita do verdão, encostadinho
     -->
 
+    <TextView
+        android:id="@+id/azulao"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_toEndOf="@+id/verdao"
+        android:layout_centerInParent="true"
+        android:background="#00FFFF"
+        android:gravity="center"
+        android:text="A"
+        android:textSize="20sp" />
+
 </RelativeLayout>
